@@ -32,7 +32,7 @@ public class Hunger : MonoBehaviour
     {
         get
         {
-            Debug.Log(_hunger);
+            //Debug.Log(_hunger);
             if (_hunger <= 0)
             {
                 // Call the function assigned to the Action
@@ -98,6 +98,11 @@ public class Hunger : MonoBehaviour
     public bool IsHungry()
     {
         return CurrentHunger <= maxHunger/2;
+    }
+
+    public float GetMaxHunger()
+    {
+        return maxHunger;
     }
     /*
     public void SetHungerDepletedCallback(System.Action callback)
